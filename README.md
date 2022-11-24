@@ -12,74 +12,73 @@ Final recruitment task
 
 ## Student endpoint -> api/student
 Method: GET -> Students
-
 Path: api/student 
 
-Method: GET -> Student
 
+Method: GET -> Student
 Path: api/student/ pramas = { studentId , firstName , lastName} 
 
-Method: GET -> StudentS
 
+Method: GET -> StudentS
 Path: api/student/{studentId}
+
 
 Method: GET -> Instructors
-
 Path: api/student/{studentId}/instructor
 
-Method: POST <- Student
 
+Method: POST <- Student
 Path: api/student/ 
 
-Method: PUT <- Student
 
+Method: PUT <- Student
 Path: api/student/{studentId}
+
 
 Method: PATCH 
-
 Path: api/student/{studentId}/addInstructor/{instructorID}
 
-Method: DELETE 
 
+Method: DELETE 
 Path: api/student/{studentId}
 
-Method: DELETE 
 
+Method: DELETE 
 Path: api/student/{studentId}/deleteInstructor/{instructorId}
+
 
 ## Instructor endpoint -> api/instructor
 Method: GET -> Instructors
-
 Path: api/instructor 
 
-Method: GET -> Instructor
 
+Method: GET -> Instructor
 Path: api/instructor/ pramas = { studentId , firstName , lastName} 
 
-Method: GET -> Instructors
 
+Method: GET -> Instructors
 Path: api/instructor/{studentId}
 
-Method: GET -> Students
 
+Method: GET -> Students
 Path: api/instructor/{studentId}/student
 
-Method: POST <- Instructor
 
+Method: POST <- Instructor
 Path: api/instructor/ 
 
-Method: PUT <- Instructor
 
+Method: PUT <- Instructor
 Path: api/instructor/{instructorId}
+
 
 Method: PATCH 
-
 Path: api/instructor/{studentId}/addInstructor/{instructorId}
 
-Method: DELETE 
 
+Method: DELETE 
 Path: api/instructor/{instructorId}
 
-Method: DELETE 
 
+Method: DELETE 
 Path: api/student/{studentId}/deleteInstructor/{instructorId}
